@@ -49,6 +49,7 @@ The devices support the following channels:
 
 | Channel Type ID | Item Type    | Description  |
 |-----------------|--------------|--------------|
+| clearzone | Switch | Remove the current speaker from the zone |
 | control | Player | Control the speaker, play/pause/next/previous/ffward/rewind |
 | coverart | Image | Image data of cover art of the current song | 
 | coverarturl | String | URL of the cover art of the current song | 
@@ -59,8 +60,9 @@ The devices support the following channels:
 | currenttitle | String | Title of the track currently playing |
 | currenturl | String | URL of the track or radio station currently playing |
 | currentuserdata | String | Custom user data (e.g. name of radio station) of the track currently playing |
+| input | String | Input of the speaker, e.g. Line-In (not supported by all speakers) |
 | loopmode | String | Loop mode of the speaker (ONE, ALL, NONE) |
-| mute | Switch | Set or get the mute state of the master volume of the speaker |
+| mute | Switch | Set or get the mute state of the master volume of the speaker (not supported by all speakers) |
 | playstate | String | State of the Speaker, e.g. PLAYING, STOPPED,.. |
 | shufflemode | Switch | Toggle the shuffle mode of the speaker |
 | stop | Switch | Stop the playback |
@@ -68,6 +70,7 @@ The devices support the following channels:
 | volume | Dimmer | Get and set the volume of the speaker |
 | volumecontrol | Switch | Flag if the volume control is enabled (might be disabled if speaker is not master of the zone) |
 | zoneid | String | Id of the Zone the speaker belongs to |
+| zonemembers | String | Set the zone members by providing a comma-separated list of device names |
 
 ## Audio Support
 
